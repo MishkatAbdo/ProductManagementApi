@@ -11,6 +11,7 @@ namespace ProductManagementApplication.Products.Commands
     /// </summary>
     public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, bool>
     {
+        public int Test { get; set; }
         private readonly IProductRepository _productRepository;
 
         public UpdateProductCommandHandler(IProductRepository productRepository)
